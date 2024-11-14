@@ -28,7 +28,7 @@ def process_dna(dna):
         if not isinstance(row, str):
             return jsonify({"error": "Each DNA sequence should be a string"}), 400
         if len(row) != 6:
-            return jsonify({"error": "Each DNA sequence must be 6 characters long"}), 400
+            return jsonify({"error": "Each DNa sequence must be 6 characters long"}), 400
 
     dna_repository = DNARepository()
 
